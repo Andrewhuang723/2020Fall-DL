@@ -11,9 +11,7 @@ There are 4 python files: Conv.py, Network.py, fruit_model.py, fruit_predict.py
 
 Consists of some classes which are necessary to build an overall neural network for prediction.
 
-#### Convolution(kernel_size, channels, out_channels, strides, padding)
-
-_CLASS_
+#### Convolution(kernel_size, channels, out_channels, strides, padding): _CLASS_
 
 function:
 
@@ -25,9 +23,7 @@ _input_shape: (batch_size, channels, w_in, h_in)_
 
 _output_shape: (batch_size, out_channels, w_out, h_out)_
 
-#### Pooling(size)
-
-_CLASS_
+#### Pooling(size): _CLASS_
 
 function:
 
@@ -37,9 +33,7 @@ _input_shape: (batch_size, channels, w_in, h_in)_
 
 _output_shape: (batch_size, out_channels, w_out, h_out)_
 
-#### net(n_linear, activation_list, batch_size)
-
-_CLASS_
+#### net(n_linear, activation_list, batch_size): _CLASS_
 
 function:
 
@@ -51,13 +45,13 @@ function:
 
 ### 2. Network.py:
 
-#### Model
+Contains fundamental neural netwrok operations
 
-_CLASS_
+#### Model(input_shape, n_hidden, activation_list): _CLASS_
 
 function:
-    
-(a) init_parameters(input_shape, n_hidden, activation_list): initialized the parameters for each hidden layer.
+
+(a) init_parameters(input_shape): initiated the parameters (weights, biases) in each layer.
 
 (b) output(inputs, weights, bias, activation_function=None): calculated the output and activation output for a hidden layer.
 
