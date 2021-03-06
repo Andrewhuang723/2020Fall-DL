@@ -1,9 +1,9 @@
-Neural network scratch
+#Neural network scratch
 ==============================
 There are 2 scripts in this file.
 
-1. Network.py: Contains several functions and classes, including ReLU, softmax, crossentropy and other utility functions. Additionally, the feed forward and back propagation algorithm are implemented in the script.
-    (1) class nn:
+##1. Network.py: Contains several functions and classes, including ReLU, softmax, crossentropy and other utility functions. Additionally, the feed forward and back propagation algorithm are implemented in the script.
+    ###(1) class nn:
         --init_parameters: For initializing parameters.
         "n_hidden" is the structure of the network, "activation list" is the activation function of each hidden layer.
         --output: It is quite similar to a single layer of feed forward network, which outputs the value (or matrix) after function operation.
