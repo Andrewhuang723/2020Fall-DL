@@ -3,7 +3,9 @@
 
 There are 2 scripts in this file.
 
-## 1. Network.py: Contains several functions and classes, including ReLU, softmax, crossentropy and other utility functions. Additionally, the feed forward and back propagation algorithm are implemented in the script.
+## 1. Network.py: 
+
+Contains several functions and classes, including ReLU, softmax, crossentropy and other utility functions. Additionally, the feed forward and back propagation algorithm are implemented in the script.
 
 ### (1) class nn:
 
