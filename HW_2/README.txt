@@ -1,4 +1,4 @@
-Fruit_Prediction
+#Fruit_Prediction
 Introduction
 Construct a 2D convolution and pooling model for predicting fruit images, which should be classified as "Carambula", "Lychee", "Pear".
 
