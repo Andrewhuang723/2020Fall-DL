@@ -1,6 +1,8 @@
 #Fruit_Prediction
-Introduction
-Construct a 2D convolution and pooling model for predicting fruit images, which should be classified as "Carambula", "Lychee", "Pear".
+
+##Introduction
+
+###Construct a 2D convolution and pooling model for predicting fruit images, which should be classified as "Carambula", "Lychee", "Pear".
 
 There are 4 python files: Conv.py, Network.py, fruit_model.py, fruit_predict.py
 
