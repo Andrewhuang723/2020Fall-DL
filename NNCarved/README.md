@@ -6,36 +6,36 @@ There are 2 scripts in this file.
 ## 1. Network.py: Contains several functions and classes, including ReLU, softmax, crossentropy and other utility functions. Additionally, the feed forward and back propagation algorithm are implemented in the script.
 
 ### (1) class nn:
-        - init_parameters: For initializing parameters.
+
+init_parameters: For initializing parameters.
         
-        "n_hidden" is the structure of the network, "activation list" is the activation function of each hidden layer.
+"n_hidden" is the structure of the network, "activation list" is the activation function of each hidden layer.
         
-        - output: It is quite similar to a single layer of feed forward network, which outputs the value (or matrix) after function operation.
+output: It is quite similar to a single layer of feed forward network, which outputs the value (or matrix) after function operation.
         
-        output function will output "z", which is "weights" dot "inputs" plus "bias", "a" is the activation function output of "z". This function could be regarded as a single hidden layer.
+output function will output "z", which is "weights" dot "inputs" plus "bias", "a" is the activation function output of "z". This function could be regarded as a single hidden layer.
         
 ### (2) class Model: super from 'nn'
         
-        - forward_pass: By passing through the parameters, outputs of every hidden layer are solved
+- forward_pass: By passing through the parameters, outputs of every hidden layer are solved
+concatenate all the outputs of each hidden layer, which return from the function "outputs". More details about the feed forward pass network, please look at page 5 of the slides "scratch.pptx"
         
-        concatenate all the outputs of each hidden layer, which return from the function "outputs". More details about the feed forward pass network, please look at page 5 of the slides "scratch.pptx"
+- backward: a simple algorithm of back propagation
         
-        - backward: a simple algorithm of back propagation
+dcda_2 is the derivative of the loss to the output of the current hidden layer, z is the current pre-activation value, activation_function is the activation function of current layer"a_1" is the output of the previous hidden layer
         
-        dcda_2 is the derivative of the loss to the output of the current hidden layer, z is the current pre-activation value, activation_function is the activation function of current layer"a_1" is the output of the previous hidden layer
+-back_propagation:
         
-        -back_propagation:
+"n_hidden", "activation_list" is the concatenate of hidden layers, activation functions. "pred" is the output of the forward_pass, "expected" is the ground-truth
+"parameters" is the concatenate of all the weights and bias in different activation function of hidden layer. Return the gradients of loss.
         
-        "n_hidden", "activation_list" is the concatenate of hidden layers, activation functions. "pred" is the output of the forward_pass, "expected" is the ground-truth
-        "parameters" is the concatenate of all the weights and bias in different activation function of hidden layer. Return the gradients of loss.
+-update: W := W - (learning rate) * gradients
         
-        -update: W := W - (learning rate) * gradients
-        
-        alpha = learining rate
+alpha = learining rate
         
 ### (3) mini_batch:
 
-        Slicing the data into n_batches, each batch contains "batch_size" X and Y.
+Slicing the data into n_batches, each batch contains "batch_size" X and Y.
     
 ### (4) get_acc:
         
