@@ -17,19 +17,22 @@ output function will output "z", which is "weights" dot "inputs" plus "bias", "a
         
 ### (2) class Model: super from 'nn'
         
-- forward_pass: By passing through the parameters, outputs of every hidden layer are solved
+- forward_pass: 
+
+By passing through the parameters, outputs of every hidden layer are solved
 concatenate all the outputs of each hidden layer, which return from the function "outputs". More details about the feed forward pass network, please look at page 5 of the slides "scratch.pptx"
         
-- backward: a simple algorithm of back propagation
-        
+- backward: 
+
+a simple algorithm of back propagation
 dcda_2 is the derivative of the loss to the output of the current hidden layer, z is the current pre-activation value, activation_function is the activation function of current layer"a_1" is the output of the previous hidden layer
         
--back_propagation:
+- back_propagation:
         
 "n_hidden", "activation_list" is the concatenate of hidden layers, activation functions. "pred" is the output of the forward_pass, "expected" is the ground-truth
 "parameters" is the concatenate of all the weights and bias in different activation function of hidden layer. Return the gradients of loss.
         
--update: W := W - (learning rate) * gradients
+- update: W := W - (learning rate) * gradients
         
 alpha = learining rate
         
