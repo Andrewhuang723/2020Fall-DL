@@ -34,7 +34,7 @@ dcda_2 is the derivative of the loss to the output of the current hidden layer, 
 "n_hidden", "activation_list" is the concatenate of hidden layers, activation functions. "pred" is the output of the forward_pass, "expected" is the ground-truth
 "parameters" is the concatenate of all the weights and bias in different activation function of hidden layer. Return the gradients of loss.
         
-- update: ```W := W - (learning rate) \times gradients```
+- update:  W := W - (learning rate) * gradients
         
 alpha = learining rate
         
