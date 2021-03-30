@@ -60,7 +60,9 @@ For each epoch in "epochs", each batch of data will passing through the feed for
 
 Predict the testing data "X_test", "y_test" with the optimized parameter "model_para" by "mini_batch_training", outputs the prediction, loss, and accuracy: "Y_pred", "loss", "accuracy".
 
-## 2. Model.py: contains reading data and data preprocessing, and last, the model training as well as prediction is carried out.
+## 2. Model.py: 
+
+contains reading data and data preprocessing, and last, the model training as well as prediction is carried out.
     
 ### (1) num_images:
         
