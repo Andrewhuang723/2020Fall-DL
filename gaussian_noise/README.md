@@ -1,10 +1,8 @@
-# Fruit_Prediction
+# Gaussian noise on image wafer
 
 ## Introduction
 
-Construct a 2D convolution and pooling model for predicting fruit images, which should be classified as "Carambula", "Lychee", "Pear".
-
-There are 4 python files: Conv.py, Network.py, fruit_model.py, fruit_predict.py
+Addiing Gaussian noise on the latent vector of the autoencoder of wafer images.
 
 Requirements: numpy
 
@@ -40,15 +38,3 @@ Consists of some classes which are necessary to build an overall neural network 
 ### 2. Network.py:
 
 #### Backbone of neural network
-
-### 3. fruit_model.py
-
-#### Read and augment images from training data
-
-* shuffle(X, Y): Shuffle the datasets by random index
-
-* split(X, Y, rate): Splitting data into training data and validation data
-
-### 4. fruit_predict.py
-
-#### Read and predict images from testing data by constructed model, and visualized the results.
