@@ -1,17 +1,7 @@
 import numpy as np
 from numba import jit
 
-@jit
-def crossentropy(pred, test):
-    for i in pred.reshape(-1):
-        if i == 0.:
-            i += 1e-6
-        elif i == 1.:
-            i -= 1e-6
-    n = test.shape[0] #(n,1,10)
-    loss = -test * np.log(pred)
-    loss = 1.0 / n * np.sum(loss)
-    return loss
+
 
 @jit
 def ReLU(x):
