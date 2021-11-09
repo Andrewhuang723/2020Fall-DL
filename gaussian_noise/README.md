@@ -22,7 +22,7 @@ Consists of some classes which are necessary to build an overall neural network 
 
 #### _CLASS_
 
-* __call__(inputs, pooling="max"): Pooling methods include "aax" (default) for maxpooling & "average" for average-pooling
+* __call__(inputs, pooling="max"): Pooling methods include "max" (default) for maxpooling & "average" for average-pooling
 
 
 ### (3) net(n_linear, activation_list, batch_size)
